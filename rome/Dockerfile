@@ -17,7 +17,7 @@ FROM alpine:3.19 as download
 ADD https://github.com/benbjohnson/litestream/releases/download/v0.3.13/litestream-v0.3.13-linux-amd64.tar.gz /tmp/litestream.tar.gz
 RUN tar -C /usr/local/bin -xzf /tmp/litestream.tar.gz
 
-FROM alpine:3.19.1
+FROM alpine:3.19.8
 
 RUN apk add bash curl sqlite
 
